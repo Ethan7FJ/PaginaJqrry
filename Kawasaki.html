@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamaha</title>
+    <link rel="shortcut icon" href="ICONs/Pagina.png">
+    <link rel="stylesheet" href="CSSs/kawa.css">
+    <script src="jaa.js"></script>
+    <script src="easinjaa.js"></script>
+    <script>
+$(document).ready(function(){
+
+$("#info").hide();
+$("#histo").hide();
+$("#kawa").hide();
+
+$("#Roid").click(function(){
+    $("#info").toggle(600);
+});
+
+$("#hipy").click(function(){
+   $("#histo").slideToggle();
+});
+$(".moto").mouseover(function(){
+   $("#kawa").fadeToggle(100);
+});
+$(".moto").mouseout(function(){
+   $("#kawa").hide(700);
+});
+
+$("#Roid").mouseover(function(){
+    $(this).stop().animate({
+        marginTop:"-50px"
+    },800,"easeInSine")
+   });
+
+$("#Roid").mouseout(function(){
+    $(this).stop().animate({
+        marginTop:"0px"
+    },800,"easeOutSine")
+});
+
+});
+    </script>
+</head>
+<body>
+
+<head>
+    <section id="menu">
+        <nav>
+            <ul class="motos" id="motrs">
+                <li><a href="Royal.html">Royal Enfield</a></li>
+                <li><a href="Susuki.html">Susuki</a></li>
+                <li><a href="Tvs.html">TVS</a></li>
+                <li><a href="Vectory.html">Vectory</a></li>
+                <li><a href="Yamaha.html">Yamaha</a></li>
+                <li><a href="Inicio.html">Inicio</a></li>
+            </ul>
+        </nav>
+                </section>
+</head>
+
+<main>
+    <article id="contendor">
+<section id="imagenRo">
+<img src="IMGs/z800kw.jpg" alt="" id="Roid">
+<input type="button" value="Historia" id="hipy">
+</section>
+<section id="info">
+<div class="moto">Kawasaki</div>
+<div class="modelo">z800</div>
+<div class="precio">$ 34.000.000 COP</div>
+</section>
+<img src="LOGs/Kawa.png" alt="" id="kawa">
+<section id="histo">
+<p>La historia de Kawasaki se remonta al año de 1878, cuando el ejecutivo japonés Shozo Kawasaki creó la compañía con el objetivo de ser líder mundial en la producción de piezas de trasporte, principalmente para la construcción naval, el material ferroviario y el sector aeroespacial. Con el paso de los años la empresa ofreció a sus clientes las tecnologías más avanzadas de la época, llegando a otras industrias como la de motocicletas. <br>
+
+    La empresa japonesa creada por Kawasaki decidió lanzarse en la producción a gran escala de motos en 1952, basándose en el conocimiento que ya tenía de la fabricación de motores de avión. Su primera aportación al mercado de motos se dio tres años después con la Meihatsu 125-500. Sin embargo, este vehículo disponía solamente del motor con la tecnología Kawasaki, ya que el lanzamiento fue oficializado por parte de la empresa Meihatsu Company, una de sus filiales.<br>
+    La primera serie de motocicletas a llevar el nombre completo de Kawasaki solo llegó al mercado en el año de 1962 con los modelos llamados B8. La legendaria moto inauguraba una nueva era en la trayectoria de la multinacional como fabricación y desarrollo de nuevas tecnologías. Era la primera vez en la historia de la empresa que se creaba una máquina totalmente diseñada por los funcionarios de la compañía, utilizando componentes propios en el motor, en el chasis y en el tren de rodaje.
+
+
+    </p>
+</section>
+    </article>
+</main>
+
+</body>
+</html>

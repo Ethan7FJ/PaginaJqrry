@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamaha</title>
+    <link rel="shortcut icon" href="ICONs/Pagina.png">
+    <link rel="stylesheet" href="CSSs/yama.css">
+    <script src="jaa.js"></script>
+    <script src="easinjaa.js"></script>
+    <script>
+$(document).ready(function(){
+
+$("#info").hide();
+$("#histo").hide();
+$("#yama").hide();
+
+$("#Roid").click(function(){
+    $("#info").toggle(600);
+});
+
+$("#hipy").click(function(){
+   $("#histo").slideToggle();
+});
+
+$(".moto").mouseover(function(){
+   $("#yama").fadeToggle(100);
+});
+$(".moto").mouseout(function(){
+   $("#yama").hide(700);
+});
+
+$("#Roid").mouseover(function(){
+    $(this).stop().animate({
+        marginTop:"-50px"
+    },800,"easeInSine")
+   });
+
+$("#Roid").mouseout(function(){
+    $(this).stop().animate({
+        marginTop:"0px"
+    },800,"easeOutSine")
+});
+
+});
+    </script>
+</head>
+<body>
+
+<head>
+    <section id="menu">
+        <nav>
+            <ul class="motos" id="motrs">
+                <li><a href="Royal.html">Royal Enfield</a></li>
+                <li><a href="Susuki.html">Susuki</a></li>
+                <li><a href="Tvs.html">TVS</a></li>
+                <li><a href="Vectory.html">Vectory</a></li>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Kawasaki.html">Kawasaki</a></li>
+            </ul>
+        </nav>
+                </section>
+</head>
+
+<main>
+    <article id="contendor">
+<section id="imagenRo">
+<img src="IMGs/ym07.jpg" alt="" id="Roid">
+<input type="button" value="Historia" id="hipy">
+</section>
+<section id="info">
+<div class="moto">Yamaha</div>
+<div class="modelo">Mt 07</div>
+<div class="precio">$ 52.000.000 COP</div>
+</section>
+<img src="LOGs/Yamaha.jpg" alt="" id="yama">
+<section id="histo">
+<p>La marca Yamaha toma el nombre de su fundador, el japonés Torakusu Yamaha, quien ya en 1887 construye su primer órgano musical, una habilidad artesanal que supuso el origen de un grupo corporativo y multinacional conocido hoy en día por su nivel de tecnología, capacidad de producción y ventas mundiales. <br>
+
+    Yamaha es una empresa con más de 125 años de Historia que opera en la actualidad con dos compañías independientes, Yamaha Corporation y Yamaha Motor Co., Ltd.<br>
+    
+    Yamaha Corporation, la empresa originaria, es líder mundial en fabricación de productos audiovisuales, instrumentos musicales, herramientas de producción musical y nuevas tecnologías aplicadas; la compañía cuenta con cerca de 20.000 empleados y 69 filiales en todo el mundo.<br>
+    
+    La compañía fue fundada en 1897 con el nombre de Nippon Gakki Co., Ltd. con un Capital Social de 100.000 yenes. En 1900 Nippon Gakki comienza la producción de pianos de pared. En 1949 la sociedad empieza a cotizar en el mercado de valores de Tokyo, hito que marca el inicio de un proceso imparable de diversificación de la marca hacia nuevos productos y aplicaciones tecnológicas. En 1954 Yamaha fabrica su primer reproductor de Audio HiFi.<br>
+
+
+    </p>
+</section>
+    </article>
+</main>
+
+</body>
+</html>

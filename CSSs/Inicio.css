@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Playfair:ital,wght@1,300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: rgb(56, 35, 35);
+    background: linear-gradient(180deg,rgb(56, 35, 35) 16%, rgb(75, 48, 48) 48%, rgb(133, 75, 75) 85%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.todo{
+    padding: 30px;
+}
+
+.encaje{
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.imagenes{
+    display: flex;
+    aspect-ratio: 16 /9;
+    overflow-x: auto;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+    animation: radio 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes radio{
+
+0%{
+    box-shadow:5px 5px 10px rgb(54, 25, 25);
+}
+50%{
+    box-shadow:0px 0px 10px rgb(117, 57, 57);
+}
+100%{
+    box-shadow:-5px -5px 10px rgb(141, 91, 91);
+}
+
+}
+
+.imagenes img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: fill;
+}
+
+.opcion{
+    display: flex;
+    column-gap: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.opcion a{
+    width: 20px;
+    height: 20px;
+    border-radius: 40%;
+    background: rgb(255, 255, 255);
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+/*Menu seleccion*/
+
+#menu{
+    
+    margin: 40px;
+    border-radius: 10px;
+}
+
+#menu nav{
+    text-decoration: none;
+    display: flex;    
+}
+
+#menu li{
+    float: left;
+    margin: 30px;
+    background: rgb(148, 177, 177);
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    list-style: none;
+    transition: 0.7s;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0,.8);
+    transition: 0.5s;
+}
+
+
+#menu li a{
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#menu li:hover{
+    transform: scale(1.5);
+    transition: 0.7s;
+    background: rgb(34, 43, 43);
+    font-family: 'Croissant One', cursive;
+    font-family: 'Playfair', serif;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+#menu li a:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.abrir img{
+    width: 35px;
+    height: 35px;
+}
+
+#menu .abrir li{
+    width: 40px;
+    height: 40px;
+    background: white;
+}
+
+#menu .abrir li:hover{
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.fantasma{
+    margin: 40px;
+    background: rgb(139, 139, 139);
+    border-radius: 10px;
+}

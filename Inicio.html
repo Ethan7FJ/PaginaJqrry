@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="shortcut icon" href="ICONs/Pagina.png">
+    <link rel="stylesheet" href="CSSs/Inicio.css">
+    <script src="jaa.js"></script>
+    <script>
+$(document).ready(function(){
+
+$(".motos").hide();
+
+$(".abrir").click(function(){
+
+$(".motos").toggle(500);
+$("#menu").toggleClass("fantasma");
+
+});
+
+});
+    </script>
+</head>
+<body>
+    
+<main>
+    <article class="todo">
+        <section class="encaje">
+<div class="imagenes">
+<img src="IMGs/gallery-7.jpg" alt="" id="royal" title="Royal Enfield Classic 350">
+<img src="IMGs/GSXS750.png" alt="" id="suki" title="Susuki GSX s750">
+<img src="IMGs/tvsrai.jpg" alt="" id="tvs" title="TVS Raider 125">
+<img src="IMGs/vyVenon.jpg" alt="" id="vect" title="Vectory Venom 250s">
+<img src="IMGs/ym07.jpg" alt="" id="yamah" title="Yamaha MT07">
+<img src="IMGs/z800kw.jpg" alt="" id="kawa" title="Kawasaki Z800">
+</div>
+<div class="opcion">
+<a href="#royal"></a>
+<a href="#suki"></a>
+<a href="#tvs"></a>
+<a href="#vect"></a>
+<a href="#yamah"></a>
+<a href="#kawa"></a>
+</div>
+        </section>
+    </article>
+    <article>
+        <section id="menu">
+            <nav>
+                <ul class="abrir">
+                    <li id="act"><img src="ICONs/menu.png" alt="" id="mens"></li>
+                </ul>
+                <ul class="motos" id="motrs">
+                    <li><a href="Royal.html">Royal Enfield</a></li>
+                    <li><a href="Susuki.html">Susuki</a></li>
+                    <li><a href="Tvs.html">TVS</a></li>
+                    <li><a href="Vectory.html">Vectory</a></li>
+                    <li><a href="Yamaha.html">Yamaha</a></li>
+                    <li><a href="Kawasaki.html">Kawasaki</a></li>
+                </ul>
+            </nav>
+                    </section>
+    </article>
+</main>
+
+</body>
+</html>

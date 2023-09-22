@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Playfair:ital,wght@1,300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: rgb(53, 49, 49);
+    background: linear-gradient(180deg,rgb(22, 17, 49) 16%, rgb(17, 11, 55)10%, rgb(105, 20, 21)85%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#contendor{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#imagenRo{
+    margin: 25px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.384);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#imagenRo input{
+    margin: 20px;
+    font-family: 'Croissant One', cursive;
+    font-family: 'Playfair', serif;
+    width: 270px;
+    height: 40px;
+    font-size: 35px;
+    border-radius: 30px;
+    border-style: initial;
+    background: linear-gradient(rgb(34, 21, 21) 40%,rgb(64, 23, 23));
+    color: aliceblue;
+    text-shadow: 3px 3px 3px black;
+}
+
+#imagenRo img{
+
+width: 450px;
+height: 350px;
+margin: 5px;
+border-radius: 20px;
+animation: radio 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes radio{
+
+0%{
+    box-shadow:5px 5px 10px rgb(104, 104, 104);
+}
+50%{
+    box-shadow:0px 0px 10px rgb(122, 122, 122);
+}
+100%{
+    box-shadow:-5px -5px 10px rgb(105, 105, 105);
+}
+}
+
+
+
+#info{
+
+    margin: 20px;
+    color: white;
+}
+
+#info div{
+    margin-left: 50px;
+    margin-top: 60px;
+    font-size: 40px;
+    font-family: 'Croissant One', cursive;
+    font-family: 'Playfair', serif;
+    
+}
+
+#info .moto{
+    background: rgba(41, 41, 41, 0.877);
+width: 250px;
+text-align: center;
+border-radius: 20px;
+border-style: ridge;
+}
+
+#info .modelo{
+margin-left: 100px;
+background: rgb(41, 41, 41, 0.877);
+width: 320px;
+text-align: center;
+border-radius: 40px;
+border-style: ridge;
+}
+
+#info .precio{
+    margin-left: 150px;
+    font-size: 45px;
+    border-radius: 40px;
+border-style: ridge;
+background: rgb(41, 41, 41, 0.877);
+width: 350px;
+text-align: center;
+    }
+
+    /*Menu*/
+
+    #menu{
+        margin: 40px;
+        background: rgb(139, 139, 139);
+        border-radius: 10px;
+    }
+    
+    #menu nav{
+        text-decoration: none;
+        display: flex;    
+    }
+    
+    #menu li{
+        float: left;
+        margin: 30px;
+        background: rgb(148, 177, 177);
+        width: 120px;
+        height: 35px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 10px;
+        list-style: none;
+        transition: 0.7s;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0,.8);
+        transition: 0.5s;
+        margin-left: 55px;
+    }
+    
+    
+    #menu li a{
+        color: black;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    
+    #menu li:hover{
+        transform: scale(1.5);
+        transition: 0.7s;
+        background: rgb(34, 43, 43);
+        font-family: 'Croissant One', cursive;
+        font-family: 'Playfair', serif;
+        transition: 0.5s;
+        color: rgb(255, 255, 255);
+    }
+    #menu li a:hover{
+        color: rgb(255, 255, 255);
+        transition: 0.5s;
+    }
+    
+/*Historia*/
+
+#histo{
+    margin-top: 30px;
+    margin: 25px;
+    background: rgba(255, 255, 255, 0.329);
+    border-radius: 20px;
+}
+
+#histo p{
+ margin: 15px;   
+ font-size: 18px;
+ font-family: 'Croissant One', cursive;
+ font-family: 'Playfair', serif;
+ color: rgb(0, 0, 0);
+}
+
+/*Logo*/
+
+#yama{
+    width: 100px;
+    height: 100px;
+   border-radius: 40px;
+}
+

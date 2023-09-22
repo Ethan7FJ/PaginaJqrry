@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Enfield</title>
+    <link rel="shortcut icon" href="ICONs/Pagina.png">
+    <link rel="stylesheet" href="CSSs/Roya.css">
+    <script src="jaa.js"></script>
+    <script src="easinjaa.js"></script>
+    <script>
+$(document).ready(function(){
+
+$("#info").hide();
+$("#histo").hide();
+$("#rial").hide();
+
+$("#Roid").click(function(){
+    $("#info").toggle(600);
+});
+
+$("#hipy").click(function(){
+   $("#histo").slideToggle();
+});
+
+$(".moto").mouseover(function(){
+   $("#rial").fadeToggle(100);
+});
+$(".moto").mouseout(function(){
+   $("#rial").hide(700);
+});
+
+$("#Roid").mouseover(function(){
+    $(this).stop().animate({
+        marginTop:"-50px"
+    },800,"easeInSine")
+   });
+
+$("#Roid").mouseout(function(){
+    $(this).stop().animate({
+        marginTop:"0px"
+    },800,"easeOutSine")
+});
+
+});
+    </script>
+</head>
+<body>
+
+<head>
+    <section id="menu">
+        <nav>
+            <ul class="motos" id="motrs">
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Susuki.html">Susuki</a></li>
+                <li><a href="Tvs.html">TVS</a></li>
+                <li><a href="Vectory.html">Vectory</a></li>
+                <li><a href="Yamaha.html">Yamaha</a></li>
+                <li><a href="Kawasaki.html">Kawasaki</a></li>
+            </ul>
+        </nav>
+                </section>
+</head>
+
+<main>
+    <article id="contendor">
+<section id="imagenRo">
+<img src="IMGs/gallery-7.jpg" alt="" id="Roid">
+<input type="button" value="Historia" id="hipy">
+</section>
+<section id="info">
+<div class="moto">Royal Enfield</div>
+<div class="modelo">Classic 350</div>
+<div class="precio">$ 17.490.000 COP</div>
+</section>
+<img src="LOGs/Royal.jpg" alt="" id="rial">
+<section id="histo">
+<p>Royal Enfield nace en Inglaterra en 1891 enfocándose principalmente en la producción de bicicletas. No fue hasta 1901 que se creó la primera motocicleta y con el pasar de los años ampliaron su gama de modelos, incluyendo bastidores con estructura pensada en las mujeres.<br>
+
+    En 1932 se creó un modelo característico de la cultura Royal: La primera «Bullet», entregando resistencia, versatilidad, velocidad y estilo.<br>
+    
+    Durante la segunda guerra mundial, los modelos más vendidos eran conocidos como «Flyin Flea», ya que eran lo suficientemente livianas para lanzarlas en paracaídas.<br>
+    
+    En 1949 la marca es lanzada en India una vez que Madras Motors adquiere 750 unidades de la Bullet para el ejército indio.<br>
+    
+    El año 1950 trajo el nacimiento de nuevos modelos de motocicletas que fueron introducidas al mercado, entre ellas, Crusader 250, Constellation, Continental e Interceptor.<br>
+    
+    En el 1955 Madra Motors obtuvo la licencia para Fabricar la Bullet y con esto se crea Enfield India Limited.<br>
+    
+    Durante la década de los 60 nacen nuevos modelos como Interceptor 750 y la icónica Continental GT Cafe Racer, esta última representa el cambio en la actitud del motociclismo, dándole un aire más juvenil y atractivo, que forma parte de el estilo que representa Royal Enfield hoy en día.<br>
+    
+    En 1977 las motos fabricadas en India comenzaron a comercializarse en el Reino Unido para satisfacer la alta demanda del movimiento que buscaba una moto de diseño clásico.<br>
+    
+    La época de los 90′ fue una década de reevaluación: Nuevas motos, nuevos dueños, nueva actitud. Se desarrolló una industria turística al rededor de la clásica e icónica Bullet, donde agencias de viaje organizaron viajes grupales a lugares como el Himalaya y el desierto de Rajastán.<br>
+    
+    En 2005 se celebraron los 50 años de producción de la Bullet en India, con esto, la Bullet se convirtió en un ícono de las carreteras, esto impulsó una nueva generación de entusiastas por Royal Enfield que fueron llamados «Bulleteros».<br>
+    
+    El 24 de noviembre de 2011 marcó el comienzo de un nuevo capítulo con la creación de la segunda fábrica de la compañía.<br>
+    </p>
+</section>
+    </article>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: lightcyan;
+    }
+
+#botones{
+    margin: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#botones input{
+ margin-left: 350px;
+ margin-top: 20px;
+ width:160px;
+ height: 50px;
+ font-size: 26px;
+ text-align: center;
+ border-style: none;
+ border-radius: 10px;
+ background: rgb(159, 238, 200);
+ color: rgb(41, 41, 41);
+ box-shadow:5px 5px 10px rgb(127, 255, 212),-4px -4px 10px rgb(97, 133, 121);
+ font-family: 'Playfair Display', serif;
+ cursor: pointer;
+}
+
+/*Inicio de secion*/
+
+#inico{
+    margin-left: 735px;
+    margin-top: -50px;
+    background: rgb(174, 237, 237);
+    width: 300px;
+    height: 369px;
+    border-radius: 10px;
+    box-shadow:5px 5px 10px rgb(103, 146, 146),-4px -4px 10px rgb(144, 202, 202);
+}
+
+#inico div{
+    padding: 18px;
+}
+
+#inico div input{
+    width: 240px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow:5px 5px 10px rgb(0, 0, 0,.4);
+    transition: 0.5s;
+}
+
+#inico div input:hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+
+#inico div p{
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#inico .ingre input{
+   font-size: 25px;
+   font-family: 'Playfair Display', serif;
+   width: 150px;
+   height: 40px;
+   margin-left: 50px;
+   background: rgb(135, 206, 235,.5);
+   text-align: center;
+   cursor: pointer;
+}
+
+/*Registro secion*/
+
+#regis{
+    margin-left: 735px;
+    margin-top: -50px;
+    background: rgb(174, 237, 237);
+    width: 300px;
+    height: 369px;
+    border-radius: 10px;
+    box-shadow:5px 5px 10px rgb(103, 146, 146),-4px -4px 10px rgb(144, 202, 202);
+}
+
+#regis div{
+    padding: 18px;
+}
+
+#regis div input{
+    width: 240px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow:5px 5px 10px rgb(0, 0, 0,.4);
+    transition: 0.5s;
+}
+
+#regis div input:hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+
+#regis div p{
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#regis .ingre input{
+   font-size: 25px;
+   font-family: 'Playfair Display', serif;
+   width: 150px;
+   height: 40px;
+   margin-left: 50px;
+   background: rgb(135, 206, 235,.5);
+   text-align: center;
+   cursor: pointer;
+}
+
+
+

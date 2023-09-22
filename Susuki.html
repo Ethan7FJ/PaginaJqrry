@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susuki</title>
+    <link rel="shortcut icon" href="ICONs/Pagina.png">
+    <link rel="stylesheet" href="CSSs/Susu.css">
+    <script src="jaa.js"></script>
+    <script src="easinjaa.js"></script>
+    <script>
+$(document).ready(function(){
+
+$("#info").hide();
+$("#histo").hide();
+$("#Susii").hide();
+
+$("#Roid").click(function(){
+    $("#info").toggle(600);
+});
+
+$("#hipy").click(function(){
+   $("#histo").slideToggle();
+});
+
+$(".moto").mouseover(function(){
+   $("#Susii").fadeToggle(100);
+});
+$(".moto").mouseout(function(){
+   $("#Susii").hide(700);
+});
+
+$("#Roid").mouseover(function(){
+    $(this).stop().animate({
+        marginTop:"-50px"
+    },800,"easeInSine")
+   });
+
+$("#Roid").mouseout(function(){
+    $(this).stop().animate({
+        marginTop:"0px"
+    },800,"easeOutSine")
+});
+
+});
+    </script>
+</head>
+<body>
+
+<head>
+    <section id="menu">
+        <nav>
+            <ul class="motos" id="motrs">
+                <li><a href="Royal.html">Royal Enfield</a></li>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Tvs.html">TVS</a></li>
+                <li><a href="Vectory.html">Vectory</a></li>
+                <li><a href="Yamaha.html">Yamaha</a></li>
+                <li><a href="Kawasaki.html">Kawasaki</a></li>
+            </ul>
+        </nav>
+                </section>
+</head>
+
+<main>
+    <article id="contendor">
+<section id="imagenRo">
+<img src="IMGs/GSXS750.png" alt="" id="Roid">
+<input type="button" value="Historia" id="hipy">
+</section>
+<section id="info">
+<div class="moto">Susuki</div>
+<div class="modelo">GSX s750</div>
+<div class="precio">$ 56.620.000 COP</div>
+</section>
+<img src="LOGs/susu.png" alt="" id="Susii">
+<section id="histo">
+<p>Suzuki comenzó a fabricar motocicletas en 1952, siendo los primeros modelos bicicletas motorizadas.De 1955 a 197611​ la compañía fabricó motocicletas sólo con motores de dos tiempos, siendo el modelo de dos tiempos más grande el Suzuki GT 750 -G2F5 tricilíndrico refrigerado por agua. <br>
+
+    Un factor importante en el éxito de Suzuki en la competición de dos tiempos fue la Alemania Oriental Grand Prix racer Ernst Degner, que desertó a Occidente en 1961,​ trayendo consigo su experiencia en motores de dos tiempos del fabricante de Alemania del Este MZ. Los secretos que Degner trajo consigo fueron tres tecnologías cruciales: el puerto de sobrealimentación,la cámara de combustión y la válvula rotativa.​ Walter Kaaden de MZ fue el primer ingeniero en combinar estas tres tecnologías cruciales.<br>
+    Suzuki se convirtió en el primer fabricante japonés en ganar un campeonato del mundo de motocross cuando Joel Robert ganó el título de 250 cm³ (15,3 pulgadas cúbicas) en 1970. <br>
+    En los años 1970, Suzuki se estableció en el mundo del motociclismo con Barry Sheene Marco Lucchinelli 1981 Franco Uncini 1982 ganando campeonatos del mundo en la categoría reina de 500 cm³ (30,5 pulgadas cúbicas). <br>
+    En 1976, Suzuki presentó sus primeras motocicletas desde la Colleda COX10​ de los años 1950 con motores de cuatro tiempos, la GS400 y la GS750.
+    </p>
+</section>
+    </article>
+</main>
+
+</body>
+</html>

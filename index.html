@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso</title>
+    <link rel="shortcut icon" href="ICONs/Pagina.png">
+    <link rel="stylesheet" href="CSSs/index.css">
+    <script src="jaa.js"></script>
+    <script>
+
+$(document).ready(function(){
+$("#inico").hide();
+$("#come").click(function(){
+    $("#inico").fadeToggle(200);
+    $("#regis").hide();
+});
+
+$("#regis").hide();
+$("#register").click(function(){
+    $("#regis").fadeToggle(200);
+    $("#inico").hide();
+})
+});
+
+    </script>
+</head>
+<body>
+    
+<main>
+    <article>
+        <section id="botones">
+            <input type="button" value="Iniciar" id="come">
+            <input type="button" value="Registrarse" id="register">
+        </section>
+        <section id="inico">
+
+<div>
+<label for="usua"><p>Usuario:</p></label>
+<input class="usu" type="text">
+</div>
+<div>
+    <label for="contra"><p>Contraseña:</p></label>
+    <input class="con" type="password">  
+    </div>
+    <div class="ingre">
+        <a href="Inicio.html"><input type="button" value="Ingresar"></a>
+    </div>
+        </section>
+        <section id="regis">
+
+            <div>
+                <label for="contr"><p>Nombre de usuario:</p></label>
+                <input class="con" type="text">
+                </div>
+                <div>
+                    <label for="contra"><p>Contraseña:</p></label>
+                    <input class="con" type="password">  
+                    </div>
+                    <div class="ingre">
+                        <a href="Inicio.html"><input type="button" value="Registrarse"></a>
+                    </div>
+                        </section>
+        </section>
+    </article>
+</main>
+
+</body>
+</html>

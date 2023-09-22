@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tvs</title>
+    <link rel="shortcut icon" href="ICONs/Pagina.png">
+    <link rel="stylesheet" href="CSSs/tvs.css">
+    <script src="jaa.js"></script>
+    <script src="easinjaa.js"></script>
+    <script>
+$(document).ready(function(){
+
+$("#info").hide();
+$("#histo").hide();
+$("#Tvs").hide();
+
+$("#Roid").click(function(){
+    $("#info").toggle(600);
+});
+
+$("#hipy").click(function(){
+   $("#histo").slideToggle();
+});
+
+$(".moto").mouseover(function(){
+   $("#Tvs").fadeToggle(100);
+});
+$(".moto").mouseout(function(){
+   $("#Tvs").hide(700);
+});
+
+$("#Roid").mouseover(function(){
+    $(this).stop().animate({
+        marginTop:"-50px"
+    },800,"easeInSine")
+   });
+
+$("#Roid").mouseout(function(){
+    $(this).stop().animate({
+        marginTop:"0px"
+    },800,"easeOutSine")
+});
+
+});
+    </script>
+</head>
+<body>
+
+<head>
+    <section id="menu">
+        <nav>
+            <ul class="motos" id="motrs">
+                <li><a href="Royal.html">Royal Enfield</a></li>
+                <li><a href="Susuki.html">Susuki</a></li>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Vectory.html">Vectory</a></li>
+                <li><a href="Yamaha.html">Yamaha</a></li>
+                <li><a href="Kawasaki.html">Kawasaki</a></li>
+            </ul>
+        </nav>
+                </section>
+</head>
+
+<main>
+    <article id="contendor">
+<section id="imagenRo">
+<img src="IMGs/tvsrai.jpg" alt="" id="Roid">
+<input type="button" value="Historia" id="hipy">
+</section>
+<section id="info">
+<div class="moto">Tvs</div>
+<div class="modelo">Raider</div>
+<div class="precio">$ 7.699.999 COP</div>
+</section>
+<img src="LOGs/TVS.png" alt="" id="Tvs">
+<section id="histo">
+<p>Sundaram Clayton se fundó en 1962 en colaboración con Clayton Dewandre Holdings, Reino Unido. Fabricaba frenos, escapes, compresores y varias otras piezas de automóviles.
+     La empresa instaló una planta en Hosur en 1978 para fabricar ciclomotores como parte de su nueva división. En 1980, TVS 50, el primer ciclomotor biplaza de la India, salió de la fábrica de Hosur en Tamil Nadu, en el sur de la India. 
+     Una colaboración técnica con el gigante automotriz japonés Suzuki Ltd. resultó en la empresa conjunta entre Sundaram Clayton Ltd y Suzuki Motor Corporation, en 1982. La producción comercial de motocicletas comenzó en 1984. <br>
+     Los lanzamientos recientes incluyen el modelo insignia TVS Apache RR 310, TVS Apache RTR 200, TVS Victor y TVS XL 100. 
+     TVS ganó recientemente 4 premios principales en los premios JD Power Asia Pacific Awards 2016, 3 premios principales en los premios JD Power Asia Pacific Awards 2015 y Fabricante de vehículos de dos ruedas del año en los premios NDTV Car & Bike Awards (2014–15). <br>
+     El 6 de diciembre de 2017, TVS presentó su motocicleta más esperada, la Apache RR 310, en un evento en Chennai. 
+     La motocicleta de 310 cc con un motor desarrollado conjuntamente con BMW presenta el primer carenado completo en una bicicleta TVS, ABS de dos canales, EFI, kits de suspensión KYB, etc.
+     Se espera que compita con motocicletas como KTM RC 390, Kawasaki Ninja 250SL , Bajaj Pulsar y Dominar y Honda CBR 250R tras salir al mercado. 
+     El Apache RR 310 está diseñado y fabricado íntegramente en India.
+
+
+    </p>
+</section>
+    </article>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectory</title>
+    <link rel="shortcut icon" href="ICONs/Pagina.png">
+    <link rel="stylesheet" href="CSSs/vect.css">
+    <script src="jaa.js"></script>
+    <script src="easinjaa.js"></script>
+    <script>
+$(document).ready(function(){
+
+$("#info").hide();
+$("#histo").hide();
+$("#vec").hide();
+
+$("#Roid").click(function(){
+    $("#info").toggle(600);
+});
+
+$("#hipy").click(function(){
+   $("#histo").slideToggle();
+});
+
+$(".moto").mouseover(function(){
+   $("#vec").fadeToggle(100);
+});
+$(".moto").mouseout(function(){
+   $("#vec").hide(700);
+});
+
+$("#Roid").mouseover(function(){
+    $(this).stop().animate({
+        marginTop:"-50px"
+    },800,"easeInSine")
+   });
+
+$("#Roid").mouseout(function(){
+    $(this).stop().animate({
+        marginTop:"0px"
+    },800,"easeOutSine")
+});
+
+});
+    </script>
+</head>
+<body>
+
+<head>
+    <section id="menu">
+        <nav>
+            <ul class="motos" id="motrs">
+                <li><a href="Royal.html">Royal Enfield</a></li>
+                <li><a href="Susuki.html">Susuki</a></li>
+                <li><a href="Tvs.html">TVS</a></li>
+                <li><a href="Inicio.html">Inico</a></li>
+                <li><a href="Yamaha.html">Yamaha</a></li>
+                <li><a href="Kawasaki.html">Kawasaki</a></li>
+            </ul>
+        </nav>
+                </section>
+</head>
+
+<main>
+    <article id="contendor">
+<section id="imagenRo">
+<img src="IMGs/vyVenon.jpg" alt="" id="Roid">
+<input type="button" value="Historia" id="hipy">
+</section>
+<section id="info">
+<div class="moto">Vectory</div>
+<div class="modelo">Venenom 250s</div>
+<div class="precio">$ 9.499.000 COP</div>
+</section>
+<img src="LOGs/vecto.png" alt="" id="vec">
+<section id="histo">
+<p>Victory Motorcycles es un fabricante estadounidense de motocicletas V-Twin cruiser y touring. Si bien no es una marca independiente, ya que pertenece a Polaris Industries, una empresa con sede en Minnesota que produce motos de nieve, vehículos todo terreno y embarcaciones. Y desde 2011 también fabrica la mítica marca Indian. <br>
+    No hay mucho que decir sobre Victory porque la primera motocicleta fue fabricada en 1997 y lanzada un año después, La compañía Polaris decidió crear Victory con una sola cosa en mente; competir con Harley Davidson y hacer un American Bagger con un enfoque diferente al de la competencia. Realmente durante más de 70 años no había existido alternativa a una verdadera motocicleta estadounidense que no fuese Harley y el éxito en los diferentes productos que Polaris tenía en el mercado le animó a querer hacerse un hueco entre la clientela de motocicletas de marcado estilo norteamericano.
+
+
+    </p>
+</section>
+    </article>
+</main>
+
+</body>
+</html>
